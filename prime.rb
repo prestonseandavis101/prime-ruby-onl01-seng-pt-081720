@@ -1,10 +1,10 @@
 
-def prime?(number)
+def prime?(prime_number)
   start = 2
   if number > 1
-    range = (start..number-1).to_a
+    range = (start..prime_number-1).to_a
     range.none? do |num_to_test| 
-      number % num_to_test == 0
+      prime_number % num_to_test == 0
     end
   else
     false
